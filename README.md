@@ -1,5 +1,5 @@
 
-<h3 align="center">Subnetting by Host or Network Requirement</h3>
+<h3 align="center">Subnetting by Host or Network Requirement, an Algebraic Approach</h3>
 
 ---
 
