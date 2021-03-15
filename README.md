@@ -27,8 +27,8 @@ This program is able to calculate all following data by taking advantage of some
 8. All possible network ranges - until every octet reaches its maximum value of 255
 
 
-The following mathematical equations were created by myself to generate all possible arithmetic sequences having increments of 128, 64, 32, 16, 8, 4, 2, and 1.
-
+T**The following mathematical equations were created by myself to generate all possible arithmetic sequences having increments of 128, 64, 32, 16, 8, 4, 2, and 1.
+**
 ![subnet_eqn](https://user-images.githubusercontent.com/79388960/111165258-c84fc300-85d9-11eb-8274-9c6ce6b65a97.jpg)
 
 
