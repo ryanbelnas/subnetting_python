@@ -12,7 +12,7 @@
 - [Getting Started](#getting_started)
 - [Usage](#usage)
 - [Built Using](#built_using)
-- [Authors](#authors)
+- [Author](#authors)
 - [Acknowledgments](#acknowledgment)
 
 ## ABOUT <a name = "about"></a>
