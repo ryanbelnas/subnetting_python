@@ -1,2 +1,2 @@
 # subnetting_python
-Subnetting by Host/Network Requirement, an Algebraic approach
+Subnetting by Host or Network requirement, an Algebraic approach
