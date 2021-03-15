@@ -3,7 +3,7 @@
 
 ---
 
-<p align="center"> An Algebraic approach in getting all possible network ranges of all classes of IP Addresses even up to increments of 1 which can then result to 16,777,216 possible network addresses.
+<p align="center"> An Algebraic approach in getting all possible network ranges of all classes of IP Addresses even up to increments of 1 which can then result to 16,777,216 network addresses.
     <br> 
 </p>
 
