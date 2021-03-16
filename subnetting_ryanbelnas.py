@@ -126,14 +126,14 @@ def network_bits(): # Copies the bits that has been considered as network bits a
      
 		
 def add_increm_octet():
-    if get_nsm_lf()[3] != 0:
-        return '4th'
+    if get_nsm_lf()[1] not in (255, 0):
+        return '2nd'
     else:
-        if get_nsm_lf()[2] != 0:
+        if get_nsm_lf()[2] not in (255, 0):
             return '3rd'
         else:
-            if get_nsm_lf()[1] != 0:
-                return '2nd'
+            if get_nsm_lf()[3] not in (255, 0):
+                return '4th'
             else:
                 'Invalid mask (2)'
 
