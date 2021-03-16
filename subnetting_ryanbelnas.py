@@ -125,17 +125,17 @@ def network_bits(): # Copies the bits that has been considered as network bits a
 
      
 		
-def add_increm_octet():
-    if get_nsm_lf()[1] not in (255, 0):
+initial_nsm_lf = get_nsm_lf().copy()
+
+def add_increm_octet(): 
+    if initial_nsm_lf[3] != 0:
+        return '4th'
+    elif initial_nsm_lf[2] != 0:
+        return '3rd'
+    elif initial_nsm_lf[1] != 0:
         return '2nd'
     else:
-        if get_nsm_lf()[2] not in (255, 0):
-            return '3rd'
-        else:
-            if get_nsm_lf()[3] not in (255, 0):
-                return '4th'
-            else:
-                'Invalid mask (2)'
+        return 'Invalid'
 
 
 
@@ -324,7 +324,7 @@ def get_usable_host():
 ###################
 print(f'\nNumber of bits: {num_bits}')
 
-new_subnet_mask_lf = '.'.join(str(x) for x in get_nsm_lf()) 
+new_subnet_mask_lf = '.'.join(str(x) for x in initial_nsm_lf) 
 print(f'New Subnet Mask \nCIDR: /{nsm_cidr} \nLong Format: {new_subnet_mask_lf}')
 
 print(f'Increment: {increm}')
