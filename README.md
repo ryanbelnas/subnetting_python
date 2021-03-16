@@ -17,7 +17,7 @@
 - [Acknowledgments](#acknowledgment)
 
 ## ABOUT <a name = "about"></a>
-This program is able to calculate all following data by taking advantage of some relevant Algebraic concepts and creating my own mathematical equations to generate these arithemtic sequences. This method was also inspired from the popular subnetting technique called by everyone else as the "Fingernetting." 
+This program is able to calculate all following data by taking advantage of some relevant Algebraic concepts and creating my own mathematical equations to generate these arithmetic sequences. This method was also inspired from the popular subnetting technique called by everyone else as the "Fingernetting." 
 1. Number of bits 
 2. Subnet Mask, long format
 3. Increment to be added per network range
