@@ -10,6 +10,7 @@
 ## Table of Contents
 - [About](#about)
 - [Getting Started](#getting_started)
+- [Running The Tests](#tests)
 - [Usage](#usage)
 - [Built Using](#built_using)
 - [Author](#authors)
@@ -27,7 +28,7 @@ This program is able to calculate all following data by taking advantage of some
 8. All possible network ranges - until every octet reaches its maximum value of 255
 
 
-**The following mathematical equations were created by myself to generate all possible arithmetic sequences having increments of 128, 64, 32, 16, 8, 4, 2, and 1.**
+**The following mathematical equations were ***created by myself*** to generate all possible arithmetic sequences having increments of 128, 64, 32, 16, 8, 4, 2, and 1.**
 
 ![subnet_eqn](https://user-images.githubusercontent.com/79388960/111165258-c84fc300-85d9-11eb-8274-9c6ce6b65a97.jpg)
 
@@ -39,6 +40,32 @@ No other prerequisites required to run this program other than latest version of
 ## RUNNING THE TESTS <a name = "tests"></a>
 The following tests have been made to ensure that the program can generate all possible network ranges and also indicate whether an octet has reached a maximum value of 255.
 
+Specifically, manual unit testing was done to ensure that X input results in Y output. This approach enables one to identify functions that compare the outcome of one's function to the expected outcome.
+
+The following variables were directly substituted with a certain value to assess if it has returned a valid output:
+* variables that determine which ranges to calculate  
+    *range_first = 0*  
+    *range_last = 50*  
+
+* a sample Class A IP Address  
+    *increm_ip = [80, 0, 0, 0]*  
+
+* dictates the value that will be added per network address  
+    *increm = 32*  
+
+* increment will be added at nth octet, i.e., a /30 Subnet Mask will return a value of '4th' since an increment will be added at the 4th octet  
+    *def add_increm_octet():*  
+        *return '4th'*  
+
+* determines the class of IP Address that has been provided and performs the necessary calculations thereafter  
+    *def ip_class():*  
+        *return 'Class C'*  
+
+**RESULTS:**
+- The following results prove that the program is capable of generating all possible network ranges until each octet reaches its maximum values.
+1. [Class A IP Addresses](https://imgur.com/a/gPUnrkn)
+2. [Class B IP Addresses](https://imgur.com/a/ZP3hXJY)
+3. [Class C IP Addresses](https://imgur.com/a/9EVGpQ0)
 
 
 ## USAGE <a name="usage"></a>
