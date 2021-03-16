@@ -31,6 +31,7 @@ This program is able to calculate all following data by taking advantage of some
 **The following mathematical equations were ***created by myself*** to generate all possible arithmetic sequences having increments of 128, 64, 32, 16, 8, 4, 2, and 1.**
 
 ![subnet_eqn](https://user-images.githubusercontent.com/79388960/111165258-c84fc300-85d9-11eb-8274-9c6ce6b65a97.jpg)
+- *assuming we are dealing with a Class A IP Address with a subnet mask of /25 to /32; wherein calculations will supposedly be performed starting from the 4th octet to the 2nd octet if the user intends to generate all possible network ranges until each octet reaches the maximum value of 255 which will then generate a total of exactly 16,777,216 network addresses having an increment of 1 - the maximum possible number of actual networks in subnetting*
 
 
 ## GETTING STARTED <a name = "getting_started"></a>
