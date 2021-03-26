@@ -17,13 +17,14 @@ else:
     print('You provided an invalid input.')
     sys.exit()
 
-print(f'\nWhat range of subnets would you like to generate?')
-range_first = int(input('Provide the first range: '))
-range_last = int(input('Provide the last range: '))
+print(f'\nWhat range of subnets would you like to generate? (Minimum range: 1)')
+range_first_input = int(input('Provide the first range: '))
+range_last_input = int(input('Provide the last range: '))
 #######################
 
 
-
+range_first = range_first_input - 1
+range_last = range_last_input - 1
 
 take_osm = take_ip.split('/')
 
@@ -339,7 +340,7 @@ print(f'No. of Actual Networks: {get_actual_nets()}')
 print(f'No. of Usable Hosts: {get_usable_host()}')
 
 ##############    
-print(f'\nPossible networks from {range_first + 1} to {range_last}:')
+print(f'\nPossible networks from {range_first_input} to {range_last_input}:')
 for a,b in zip(net_addr(), brdcst_addr()):
     print(a, b)
 ##################
