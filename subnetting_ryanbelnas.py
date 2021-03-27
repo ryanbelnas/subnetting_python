@@ -1,6 +1,6 @@
 import sys
 
-# #### INPUT ########
+######## INPUT ########
 print(f'REMINDERS: \n1. As of 03.15.2021, this program is unable to accurately pinpoint which inputs of yours are incorrect. Thus, make sure to only provide valid inputs for this program to run successfully. \n2. Proper format should be as follows: AAA.BBB.CCC.DDD/XX, where XX is the CIDR (no spaces please). \n3. Please see README file to be informed regarding the maximum number of actual networks that can be generated. \n4. This program can generate ALL possible network ranges per class of IP address. \n \n')
 take_ip = input('Provide the IP address with its subnet mask in CIDR notation: ')
 
@@ -8,10 +8,25 @@ print(f'\nWhich type of subnetting do you want to perform?')
 type_subnet = int(input('Choose 1 or 2: \n1. Network requirement \n2. Host requirement \n\n' ))
 
 if type_subnet == 1:
-    get_bits = int(input('How many networks?: '))
+    get_bits_input = int(input('How many networks?: '))
+
+    ################### Exceptions to the Fingernetting Technique ################### 
+
+    if get_bits_input in (2, 4, 8, 16, 32, 64, 128):
+        get_bits = get_bits_input - 1
+    else:
+        get_bits = get_bits_input
+
 
 elif type_subnet == 2:
-    get_bits = int(input('How many hosts?: '))
+    get_bits_input = int(input('How many hosts?: '))
+
+    ################### Exceptions to the Fingernetting Technique ###################
+    
+    if get_bits_input in (3, 7, 15, 31, 63, 127):
+        get_bits = get_bits_input + 2
+    else:
+        get_bits = get_bits_input
 
 else:
     print('You provided an invalid input.')
